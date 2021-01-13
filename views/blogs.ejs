@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Photo Gallery</title>
+</head>
+<body>
+  Voir le blog des images.
+  <ul class="quotes">
+  <% for(var i=0; i<data.length; i++) {%>
+    <li class="quote">
+      Post Title : <span><%= data[i].Post_title %></span> | 
+      Post Comment : <span><%= data[i].Post_comment %></span>
+      |
+      Image : <img src ="<%= data[i].Post_image %>">
+    </li>
+  <% } %>
+  </ul>
+</body>
+</html>
